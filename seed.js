@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 
 // Connect to MongoDB via Mongoose
 seeder.connect(
-    "mongodb://127.0.0.1:27017/staycation",
+    "mongodb+srv://rizzdev:staycationserver999@cluster0.vsugg.mongodb.net/staycation-server?retryWrites=true&w=majority",
     {
         useNewUrlParser: true,
         useCreateIndex: true,
@@ -1789,8 +1789,8 @@ var data = [
         documents: [
             {
                 _id: mongoose.Types.ObjectId("5e96cbe292b97300fc90cee1"),
-                bookingStartDate: "12-12-2020",
-                bookingEndDate: "12-12-2020",
+                bookingDateStart: "12-12-2020",
+                bookingDateEnd: "12-12-2020",
                 invoice: 1231231,
                 itemId: {
                     _id: mongoose.Types.ObjectId("5e96cbe292b97300fc902222"),
@@ -1838,14 +1838,14 @@ var data = [
             {
                 _id: mongoose.Types.ObjectId("5e96cbe292b97300fc903322"),
                 nameBank: "Mandiri",
-                nomorRekening: "089898",
+                accountNumber: "089898",
                 name: "elfin",
                 imageUrl: "images/logo bca.png",
             },
             {
                 _id: mongoose.Types.ObjectId("5e96cbe292b97300fc903323"),
                 nameBank: "BCA",
-                nomorRekening: "878678",
+                accountNumber: "878678",
                 name: "elfin",
                 imageUrl: "images/logo mandiri.png",
             },
